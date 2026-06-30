@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Resume Screening</title>
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Resume Screening System</h1>
+
+<form action="/match"
+method="POST"
+enctype="multipart/form-data">
+
+<input type="file"
+name="resume"
+required>
+
+<textarea
+name="job_description"
+placeholder="Enter Job Description"
+required></textarea>
+
+<button type="submit">
+Check Match
+</button>
+
+</form>
+
+{% if score %}
+
+<h2>
+Match Score : {{ score }} %
+</h2>
+
+{% endif %}
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
