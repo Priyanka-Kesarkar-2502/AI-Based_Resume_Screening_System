@@ -91,12 +91,5 @@ scikit-learn
 
 (You can save this as `requirements.txt` in the project root.)
 
-## Future Improvements
-
-- Support for ranking multiple resumes against a single job description
-- Stopword removal and lemmatization for better text preprocessing (using NLTK/spaCy)
-- Display matched/missing skills along with the score
-- AJAX-based form submission for a smoother user experience without page reloads
-- Support for `.docx` resumes in addition to PDF
 ##
 Made with Flask, Python, and a passion for solving real-world hiring problems.
